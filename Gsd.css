@@ -1,0 +1,126 @@
+body {
+	
+	text-align: center;
+	background-color: hsl(29, 100%, 59%); 
+	padding: 10px 10%;
+}
+
+h1 {
+	
+}
+
+.topic {
+	border-style: dotted solid double dashed;
+	background-color: white; 
+	border-radius: 20px; 
+	padding:15px; 
+	box-shadow: 8px 8px 8px #aaa;  
+	
+	border-left-style: solid;	
+	color: teal;
+	font-family: 'Tangerine', serif; 
+	text-shadow: 8px 8px 8px #aaa;  
+	margin-bottom: 15px; 
+	text-transform: uppercase;
+
+}
+
+.p-name {
+	color: grey; 
+	border: 1px solid teal;
+	border-radius: 10px; 
+	background-color: white; 
+	padding: 7px; 
+}
+
+.p-time {
+	color: gray;
+	background-color: white; 
+	border: 1px solid teal; 
+	padding: 14px; 
+	border-radius: 13px; 
+}
+
+.main_menu li { 
+	display: inline-block;
+	margin: 10px;
+	font-size: 20px;
+	
+	text-decoration: non;
+  }
+ 
+ a {
+	 text-decoration: non; 
+ }
+
+p {
+	font-family: "tangerine"; 
+	color: white; 
+	opacity: 0.90; 
+}
+
+
+.nav {
+	border: 1px solid white; 
+	background-color: whitesmoke; 
+	border-radius: 11px; 
+	padding: 15px;
+	
+	
+}
+
+
+.h2 {
+	color: teal; 
+	font-family:"tangerine", serif;
+}
+
+h3 {
+	color: rebeccapurple;
+	font-style: oblique; 
+}
+
+.unorder {
+	font-style: italic;
+	color: white; 
+	
+}
+ul,ol {
+	list-style-position: inside;
+}
+.order {
+	font-style: italic;
+	color: white; 
+	list-style: non;
+}
+
+ img {
+	width: 550px;
+	height: 440px
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-shadow:;
+}
+.fgsd {
+	position: relative;
+	right: 300px;
+	color: whitesmoke;
+}
+.gsd {
+	position: relative;
+	bottom: 15px;
+}
+.copyright{
+	position: relative;
+	right: 300px;
+	bottom: 20px;
+	font-size: 14px;
+
+}
+
+*{
+	box-sizing: border-box;
+}

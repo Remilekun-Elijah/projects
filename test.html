@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var greetings = 'hello world';
+hi = [];
+ hi.push('Stop Saying', 'say', 'scream', 'echo') 
+ 
+arrayIndex = function () {
+return Math.ceil(random());
+}
+hello = function() {
+return hi[Math.floor(Math.random())] + ' ' + greetings;
+}
+
+</script>
+</head>
+<body>
+<h2 class="text-center">My First JavaScript</h2>
+
+<button type="button" class="btn btn-block btn-primary"
+onclick="document.getElementById('demo').innerHTML = Date() + '<p>What an invisible something</p>'+ arrayIndex() +' ' + hello() ">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+	display: -webkit-box;
+	-webkit-box-pack: start;
+	text-align: center;
+	background-color: rgb(183, 183,183);
+
+	/*background-color: rgb(159, 155,162);*/
+}
+.bot-name{
+color: red;
+font-family: cursive;
+}
+.bot-pic{
+	border-bottom-style: ridge;
+	width: 250px;
+	height: 350px;
+	position: relative;
+	bottom: 10px;
+}
+#ui {
+	box-shadow: 5px 5px 25px 5px;
+	border-radius: 10px;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	font-style: italic;
+}
+#send{
+	box-shadow: 5px 5px 25px 5px;
+	border-radius: 5px;
+	height: 30px;
+	width: 80px;
+}
