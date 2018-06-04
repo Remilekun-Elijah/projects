@@ -21,7 +21,7 @@
 <body class="text-center">
 <div class="container-fluid">
 		<h1 class="bot-name"> ChatBot </h1>
-		<img class="bot-pic img-thumbnail" src="C:\Users\user\Pictures\FB_IMG_15233947670837503.jpg" alt="Bot Pic"/> 
+		<img class="bot-pic img-thumbnail animated shake" src="C:\Users\user\Pictures\FB_IMG_15233947670837503.jpg" alt="Bot Pic"/> 
 	<div class="row">
 		<div class="col-xs-4">
 			<button class="btn btn-block btn-primary fa fa-thumbs-up"> Like</button>
@@ -35,49 +35,52 @@
 	</div>
 		<h2 style="color: red; font-family: cursive;" > Bot Version 0.1 BETA </h2>
 		
-		<form action="/Users/user/Documents/projects/chatbotlogin.html">
-		
+    <form action="/Users/user/Documents/projects/chatbotlogin.html">
+        
+		<label>
+            <h3 style="color: teal; "> Choose Your Gender: </h3>
+            <input type="radio" name="gender" style="color: teal;" checked> <i class="fa fa-male"></i> Male
+        </label>
 			
-				<label>
-				<h3 style="color: teal; "> Choose Your Gender: </h3>
-				<input type="radio" name="gender" style="color: teal;" checked> <i class="fa fa-male"></i> Male
-				</label>
-			
-				<label>
-				<input  type="radio" name="gender" style="color: teal;"> <i class="fa fa-female"></i> Female 
-				</label>
+        <label>
+            <input  type="radio" name="gender" style="color: teal;"> <i class="fa fa-female"></i> Female 
+        </label>
 				
-			<br />
-				<label>
-				<h3 style="color: teal;"> Choose Your Topic: </h3>
-				<input type="checkbox" name="topic" style="color: teal;" checked> Business
-				</label>
+        <br/>
+        <label>
+            <h3 style="color: teal;"> Choose Your Topic: </h3>
+            <input type="checkbox" name="topic" style="color: teal;" checked/> Business
+        </label>
 				
-				<label>
-				<input type="checkbox" name="topic" style="color: teal;" > ChitChat
-				</label>
-
+        <label>
+            <input type="checkbox" name="topic" style="color: teal;" > ChitChat
+        </label>
+        
 		<br />
-		<hr>
+		<hr/>
 		<br/>
 		<div class="row">
 			<div class="col-xs-6">
 				<button class="btn btn-default" id="arrow"> PlEASE CLICK <i class="fa fa-arrow-right"></i></button>
 			</div>
 			<div class="col-xs-4">
-				<button type="submit" class="btn btn-success fa fa-spin"> <h5><i class="fa fa-sign-in"> SIGN IN </h5></i></button>
+                <button type="submit" class="btn btn-success fa fa-spin"> <h5><i class="fa fa-sign-in"> SIGN IN</i></h5></button>
 			</div>
 		</div>
+    </form>
 		<br />
 		<hr style="position:relative; top:10px;">
 		<br/>
-		<h3>Comment <i class="fa fa-comments"/></i></h3>
-		<textarea class="text-center" style="padding-top:30px; "name="comment" rows="5" cols="40" placeholder="Sign In First Please" title="Please Sign In First"></textarea>
-		<button type="button" class="btn btn-primary" ><i class="fa fa-send-o"> Post </i></button>
+        <section class="msgArea">
+        
+        </section>
+        <br>
+		<h3>Comment <i class="fa fa-comments"></i></h3>
+		<input class="text-center text" style="height: 80px; width: 150px;" placeholder="Sign In First Please" type="text" id="myText"/>
+        
+		<input type="submit" class="btn btn-lg" value="Click here"  onclick="alerter()"/>
 
 
-		</form>
-	</div>
 </div>
 		<link rel="stylesheet" href="libraries/animate.css"/>
 		<script rel="stylesheet" src="libraries/jquery-3.3.1.min.js"></script>
@@ -87,7 +90,18 @@ $("#arrrow").css("background-color", "orange");
 
 $("#arrow").prop("disabled", true);
 $("input").addClass("shakeHead");
-alert("Please Login Or Sign Up To Enjoy The Best Out Of Our Bots");});
+});
+function alerter() {
+    var alerts = document.getElementById("myText").value;
+    
+    if(alerts.length == 0){
+        alert("Please input in the comment box");
+        return;
+    }
+}
+    
+
+ 
 </script>
 </body>
 </html>

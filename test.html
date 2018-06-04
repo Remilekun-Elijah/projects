@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script rel="stylesheet" src="libraries/jquery-3.3.1.min.js"></script>
 <script>
-var greetings = 'hello world';
-hi = [];
- hi.push('Stop Saying', 'say', 'scream', 'echo') 
- 
-arrayIndex = function () {
-return Math.ceil(random());
-}
-hello = function() {
-return hi[Math.floor(Math.random())] + ' ' + greetings;
-}
-
+var greetings = 'hello world, dope shawdiz are here';
+var words = [];
+ words.push('Stop Saying', 'say', 'scream!!!', 'echo!!!', greetings) 
+ words.splice(words.length-1,words.length-1, ' has been removed successfully')
+//hello = function() {
+//return hi[Math.floor(Math.random())] + ' ' + greetings;
+//}
+    
+    var arrayIndex = function () {
+        
+    return "<button class='btn btn-primary'>Click to output</button>";
+    
+    }
+   $(function(){
+    
+    $(".btn").click(function(){
+    return "<ul><li> cool</li><li> nice</li></ul>";
+    });
+});
+    
 </script>
 </head>
 <body>
 <h2 class="text-center">My First JavaScript</h2>
 
 <button type="button" class="btn btn-block btn-primary"
-onclick="document.getElementById('demo').innerHTML = Date() + '<p>What an invisible something</p>'+ arrayIndex() +' ' + hello() ">
+onclick=" document.getElementById('demo').innerHTML = arrayIndex();">
 Click me to display Date and Time.</button>
 
 <p id="demo"></p>
-
+<p class="btn"></p>
 
 </body>
 </html>
