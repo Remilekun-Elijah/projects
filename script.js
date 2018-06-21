@@ -1,9 +1,6 @@
+var html;
 $(function(){
-    console.log("Main Init");
-    init();
-    console.log("Lets play the game nicely"); 
+    'use strict;'
+    $('body').append('<h1>Hello world</h1>').addClass('container ').css('text-align','center').css('color', 'teal');
+    
 });
-
-function init(){
-    console.log("init() called");
-};

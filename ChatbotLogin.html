@@ -123,31 +123,34 @@ border-left: 1px solid black;
 		
 		<div class="col-xs-4">
 			<div class="well signUp">
-				<form>
+				<form action="/submit.php" method="POST">
 					<div class="text-center text-danger top">
 						<h3 id="sign-in-head"> Sign In </h3> 
 					</div>
 					<div class="row">
 						<div class="col-xs-8">
-							<label>
-								<h4 id="email"> Email</h4>
-								<input id="email-input" type="text" class="form-control" name="email" placeholder="Email Address"/>
-                            </label>
+							
+								<label for='email'>
+                                    <h4 id="email"> Email</h4>
+								    <input id="email-input" type="email" class="form-control" name="email" placeholder="Email Address"/>
+                                </label>
+                        
 						</div>
 						<div class="col-xs-4">
 							<aside style="float: right;">
 								<blockquote style="margin-bottom:-50px; border-bottom:4px solid rgb(183, 183,183);" target="_blank"><a href="https://fb.com/bhad-bwoy-remi/"><button id="facebook" class="btn btn-primary"> <i class="fa fa-facebook-f"></i> Sign In With Facebook</button></a> <br> <br>
 								<a href="https://twitter.com/Remilekun-Elijah/" target="_blank"><button class="btn btn-info target" id="twitter"> <i class="fa fa-twitter"> </i> Sign In With Twitter</button></a> <br><br>
-								<a href="https://gmail.com/remilekunelijah21997"><button class="btn btn-danger target" id="google"> <i class="fa fa-google-plus"></i> Sign In With Google</button></a> </blockquote>
+								<a href="mail-to:remilekunelijah21997@gmail.com"><button class="btn btn-danger target" id="google"> <i class="fa fa-google-plus"></i> Sign In With Google</button></a> </blockquote>
 							</aside>
 						</div>
                     </div>
 						<div class="col-xs-8" style="position: relative; bottom: 40px; margin-bottom: -1.5em; right: 1em; ;">
-                            <label>
-                                <h4 id="password"> Password </h4>
-
-                                <input id="password-input" type="text"  name="password"  class="form-control" placeholder="Password"/>
-                            </label>
+                             <label for='password'>
+                                 <h4 id="password">
+                                Password </h4>
+                            
+                                <input id="password-input" type="password"  name="password"  class="form-control" placeholder="Password"/>
+                             </label>
                             <br><br>
                             <button class="btn btn-success" id="sign-In" type="submit"> <i class="fa fa-sign-in"> Sign In</i></button>
 
@@ -163,7 +166,7 @@ border-left: 1px solid black;
 			
 		</div>
 		
-		<footer>
+		<footer >
 		</footer>
 	</div>
 </div>

@@ -27,8 +27,45 @@
         <style>
             body{
                 background-image: /*linear-gradient( 95deg, #2f9, #a3a)*/
-                    linear-gradient(70deg, teal, #ff0);
-                
+                /*    linear-gradient(70deg, teal, #ff0); */
+                        transform: scale(1.5);
+        background: repeating-linear-gradient(
+                40deg,
+                #ff0 0px,
+                #aaa 40px,
+                #ffcccc 40px,
+                #ccffff 80px
+            );
+            overflow: hidden;
+            margin: auto;
+            
+            }
+            button:hover{
+                position: relative;
+                /*transform: skewX(-35deg);
+                transform: rotate(180deg);
+                transform: scale(1.2);*/
+                animation-name: breathe;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(0.50,0.20,0.90,1);
+            }
+            @keyframes breathe{
+                0%{
+                    transform: skewX(0deg);
+                    opacity: 1;
+                } 
+                50%{
+                    opacity: 0.3;
+                    transform: scale3d(1,0.75,1);
+                    transform: skewX(-30deg);
+                }
+               
+                80%{
+                   opacity: 0.7;
+                    transform: skewX(30deg);
+                }
             }
         </style>
 	</head>
@@ -48,7 +85,7 @@
            hours = hours ? hours : 12; // 0 becomes 12
            minutes = minutes < 10 ? '0' + minutes : minutes;
           lunch = hours +':'+ minutes + " " + ampm ;
-            return lunch;
+            return '<p style="transform:scale(2.5); color:teal;">'+lunch+'</p>';
              
             
         };
@@ -78,7 +115,7 @@
               var  msg = document.getElementById('msg');
                 
                   
-                if ( hours >= 12 && hours < 4 && ampm === '<small>PM</small>'){       
+                if ( hours >= 0 && hours < 4 && ampm === '<small>PM</small>'){       
                     msg.innerHTML =  "<i class='fa fa-user' style='font-size:60px; color: white; padding: 8px 0 4px 0;'></i> <br><div style= 'margin: 0 40%; background: linear-gradient(50deg, #ff0, teal); border: 1px solid #bbb; box-shadow: 3px 5px 3px black; padding: 10px; '><h4 style='color: #a05; background: linear-gradient(35deg, white, whitesmoke); margin:0 10%; padding:0.5em 1em;'> Good Afternoon Sire</h4> <br><p style='font-size: 20px; color: teal;'> Welcome To My World <br> Feel free to have a look around</p></div>" ;
                     
                      }
