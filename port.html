@@ -1,125 +1,143 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Login/SignUp">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="description" content="Login/SignUp">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--- CONTENT DELIVERY NETWORK LIBRARIES -->
-					<!---upper version Bootstrap Links-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-					
-						<!---	Font AweSome Link	 -->
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<!--- CONTENT DELIVERY NETWORK LIBRARIES -->
+	<!---upper version Bootstrap Links-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-				<!--- LOCAL LIBRARY LINK --><!-- 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!---	Font AweSome Link	 -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+	<!--- LOCAL LIBRARY LINK -->
+	<!-- 
 		<link rel="stylesheet" href="libraries//new-libraries/bootstrap.min-3.3.7.css"/>
 		<link rel="stylesheet" href="/Users/user/Documents/GitHub/projects/Libraries/font-awesome-4.5.0.min.css">
 		<link rel="stylesheet" href="libraries/animate.css"/>
 		<script rel="stylesheet" src="libraries/new-libraries/jQuery.min-3.3.1.js"></script>
         <script rel="stylesheet" src="Libraries/new-libraries/bootstrap.min-3.3.7.js"></script>-->
-	
-		<title> My Portfolio </title>
-		<style type="text/css">
-		:root{
-		--gray: gray;
-		--white: white;
-		--max-size: 102%;
-		--text-center: center;
+
+	<title> My Portfolio </title>
+	<style type="text/css">
+		:root {
+			--gray: gray;
+			--white: white;
+			--max-size: 102%;
+			--text-center: center;
 		}
-		nav{
-            
+
+		nav {
+
 			width: var(--max-size, 100%);
-			margin-left: -1.2em; 
-            text-align: var(--text-center, center);
+			margin-left: -1.2em;
+			text-align: var(--text-center, center);
 			background-color: #722872 !important;
 			box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
 			border-color: #592059;
 		}
-		.ul li{
+
+		.ul li {
 			display: inline-block !important;
 			margin-left: 3em;
 		}
-		h2{
+
+		h2 {
 
 			color: var(--white, #fff);
 			font-family: 'great vibes', font-awesome, cursive;
 		}
-		h3{
+
+		h3 {
 			font-family: tahoma, cursive;
 			text-transform: uppercase;
 			color: var(--white, #fff);
 		}
-		 
-		a:hover,a:focus{
-		
+
+		a:hover,
+		a:focus {
+
 			color: var(--gray, gray);
-			
+
 		}
-		.my-text{
+
+		.my-text {
 			font-size: 20px;
-			margin-left: -10px; 
+			margin-left: -10px;
 			color: whitesmoke;
 			text-align: right;
 		}
+
 		.author {
 			border-radius: 80%;
 			width: 20em;
 			height: 20em;
-/*			margin-left: 3em;*/
-/*			margin-bottom: -2em;*/
-/*          margin-top: 3em; */
+			/*			margin-left: 3em;*/
+			/*			margin-bottom: -2em;*/
+			/*          margin-top: 3em; */
 		}
-		.wrapper{
+
+		.wrapper {
 			background-color: #aaa;
-            padding-top: 10em;
+			padding-top: 10em;
 		}
-		html body{
-            overflow-x: hidden;
-            background: #888;
+
+		html body {
+			overflow-x: hidden;
+			background: #888;
 			margin: 0;
 		}
-		.flex{
+
+		.flex {
 			/*display: flex;
 			justify-content: row;*/
 			padding-top: 15em;
 			margin-bottom: -6em;
-			padding-bottom:-6em;
+			padding-bottom: -6em;
 		}
-		section{
+
+		section {
 			background-color: #aaa;
 			padding: 0 5em;
 			padding-bottom: -5em;
 			margin-bottom: -5em;
 		}
-		.hr-1{
-			border-bottom: 3px solid whitesmoke; 
-/*			margin-right: 25em;*/
-            border-image-width: auto;
-			
+
+		.hr-1 {
+			border-bottom: 3px solid whitesmoke;
+			/*			margin-right: 25em;*/
+			border-image-width: auto;
+
 			padding-bottom: -5em;
 		}
-		.work{
-            text-align: center;
+
+		.work {
+			text-align: center;
 			margin-right: 10.5em;
 			padding-bottom: 5em;
-			
+
 		}
-		.portfolio-div{
-/*			margin-top: 5em;*/
+
+		.portfolio-div {
+			/*			margin-top: 5em;*/
 			background: #eee;
-		  
-			box-shadow:0px 5px 2px 1px #aaa;
+
+			box-shadow: 0px 5px 2px 1px #aaa;
 		}
-		*{
+
+		* {
 			box-sizing: -webkit-border-box;
 		}
-		.h1{
+
+		.h1 {
 			text-align: var(--text-center, center);
 			color: var(--gray, gray);
 			padding-top: 1em;
@@ -127,261 +145,271 @@
 			padding-bottom: 0em;
 			font-weight: bold;
 		}
-		.portfolio{
+
+		.portfolio {
 			border-bottom: 5px solid var(--gray, gray);
 			text-align: center;
-            
+
 		}
-        .login-1{
-                width: 500px;
-                height: 450px;
-            }
-		
-		.login-2{
-            height: 450px; 
-			
-            			
+
+		.login-1 {
+			width: 500px;
+			height: 450px;
 		}
-		.logins{
+
+		.login-2 {
+			height: 450px;
+
+
+		}
+
+		.logins {
 			text-align: var(--text-center, center);
 			padding-bottom: 2em;
-            text-align: center;
+			text-align: center;
 		}
-		
-		.hr{
-			border-bottom: 2px solid var(--gray,gray);
+
+		.hr {
+			border-bottom: 2px solid var(--gray, gray);
 			text-align: var(text-center, center);
 			margin-left: 1.2em;
 			margin-right: 1.2em;
 		}
-		
-		article{
+
+		article {
 			text-align: var(--text-center, center);
-			
+
 		}
-		.ad{
+
+		.ad {
 			width: 1000px;
 			height: 550px;
 		}
-		footer{
+
+		footer {
 			width: 102.3%;
 			margin-left: -1.1em;
 			padding-bottom: 2em;
-			
-			box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-			border-color:#592059;
-		
+
+			box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+			border-color: #592059;
+
 		}
-		.footer-1{
-			
-            
+
+		.footer-1 {
+
+
 			padding-top: 3em;
 			background: #aaa;
 			text-align: var(--text-center, center);
 			color: var(--white, #fff) !important;
 		}
-		
-		.footer-2{
-            margin-top: -1em;
+
+		.footer-2 {
+			margin-top: -1em;
 			background: #592059;
-			box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
 		}
-		
-		.footer-p{
-		text-align: var(--text-center, center);
-		color: var(--white, #fff);
-		font-size: 20px;
+
+		.footer-p {
+			text-align: var(--text-center, center);
+			color: var(--white, #fff);
+			font-size: 20px;
 		}
-		em , strong a:hover, a, a:focus {
-			color: #722872;
+
+		em,
+		strong a:hover,
+		a:focus {
+			color: #722872 !important;
 		}
+
 		.social li {
-		
-			display: inline-block; 
+
+			display: inline-block;
 			margin-left: 1em;
-			border-radius: 90%; border: 1px solid #722872; padding: 1em; background: #aaa; 
-		
-		
+			border-radius: 90%;
+			border: 1px solid #722872;
+			padding: 1em;
+			background: #aaa;
+
+
 		}
-		
-		
-		.footer-h1{
+
+
+		.footer-h1 {
 			color: var(--white, #fff);
 		}
-		.social li:hover   {	
+
+		.social li:hover {
 			color: #722872;
-            border-radius: 90%; 
-            border: 1px solid #722872;
-            background: whitesmoke;
+			border-radius: 90%;
+			border: 1px solid #722872;
+			background: whitesmoke;
 		}
-		#contact{
-            background: #eee;
-            margin-top: -1.3em;
-		
+
+		#contact {
+			background: #eee;
+			margin-top: -1.3em;
+
 		}
-		
-		.con{
-		  
-			
-		}
-		
-		.contact-me{
+
+		.con {}
+
+		.contact-me {
 			text-align: var(--text-center, center);
 			color: var(--gray, gray);
 			font-weight: bold;
 			line-height: 3em;
 			padding-top: 1em;
 			margin-bottom: 1em;
-			
+
 		}
 
-		
-		input , textarea{
+
+		input,
+		textarea {
 			border: none;
 			background: transparent;
 			border-bottom-style: solid;
 			height: 3.5em;
 			color: var(--gray, gray);
 			font-size: 1.5em;
-			
-			
+
+
 			padding-left: 0.1em;
 		}
-		#message-box{
+
+		#message-box {
 			height: 8em;
 		}
-		.btn{
-		text-transform: uppercase;
+
+		.btn {
+			text-transform: uppercase;
 			margin-top: 2em;
 			margin-left: 5em;
 		}
-		
-		.ct{
-            /*display: flex;
+
+		.ct {
+			/*display: flex;
 			justify-content: space-within;
 			margin-top: 2em;*/
 			font-size: 1.5em;
 			color: var(--gray, gray);
-			/*padding-right: 2em;*/ 
+			/*padding-right: 2em;*/
 		}
-		.flex-2{
+
+		.flex-2 {
 			/*display: flex;
 			justify-content: space-between;
-			*/line-height:  2.5em;
+			*/
+			line-height: 2.5em;
 		}
-		.navbar-fixed-top{
-			
-		}
-		</style>
-<script type="text/javascript">
-	$(document).ready(function(){
-		
-		$(window).on('scroll', function(){
-            $('#nav-button').css('color','red');
-        })
-		
-		$(window)
-	});
 
-</script>
-	</head>
-	<body data-spy="scroll" data-target="#navbar" data-offset="30" >  
-        
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
 
-                <nav class="navbar navbar-inverse navbar-fixed-top">
-                    <div class="container">
-                            <div class="navbar-header">	
-                                <button type="button" class="navbar-toggle" id="nav-button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls='navbar' aria-label="toggle navigation">
+			$(window).on('scroll', function() {
+				$('#nav-button').css('color', 'red');
+			})
+
+			$(window)
+		});
+
+	</script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+
+	<nav class="navbar navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" id="nav-button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls='navbar' aria-label="toggle navigation">
                                     <span class="sr-only"> toggle navigation</span>                            
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                   <span class="icon-bar"></span>
                                     
-                                </button> 
-                                        <a href="#" class="navbar-brand">Dev_GanG</a>    
-                            </div>
-                            <div class="collapse navbar-collapse" id="navbar" role="navigation" aria-expanded="false">
-                                <ul class="nav navbar-nav navbar-right">    
-                                    <li class="active">
-                                        <a href="#about" class="">About </a>
-                                    </li>
-                                    <li> 
-                                        <a href="#portfolio" class=""> Portfolio </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact" class=""> Contact </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    
-                </nav>
-     
-        <div class="container">    
-        <div id="about" class="wrapper">				   
-                
-                
-                    <div class='container'>
-                         <div class='row'>
-                             <div class='container'>
-                             <div class='col-md-8'>
-<!--                                <div class="flex">-->
-                                    <p class="my-text"> A Front-End Web Developer and a UI designer, with little <br> experience in UX design, got Team Work and a Relentless Spirit; <br> devoted to functional 
-                                      programming and a tech geek.
-                                    </p>
-                                
-                        
-                    <hr class="hr-1"/>
-                                 <h3 class="work"> Web Developer | UI Designer | Phone Engineer </h3></div>
-                                   <div class='container'>
-                                 <div class='col-md-4'>
-                                  <!--<img class="author" src="http://oi66.tinypic.com/6yfhjp.jpg"  alt="Author staring at the camera"/>-->
-                                 <img src="C:\Users\user\Pictures\author.jpg" alt='author stairing at the camera' class='author img-responsive'/>
-                             </div>
-                             </div>
-                             </div>
-                        </div>
-                    </div>
-            </div>
+                                </button>
+				<a href="#" class="navbar-brand">Dev_GanG</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar" role="navigation" aria-expanded="false">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#about" class="">About </a>
+					</li>
+					<li>
+						<a href="#portfolio" class=""> Portfolio </a>
+					</li>
+					<li>
+						<a href="#contact" class=""> Contact </a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-                <div id="portfolio" class="portfolio-div">
-                    <article class='logins'>
-                        <h1 class="portfolio h1 text-center"> PORTFOLIO </h1>
-						
-                        <div class="logins row">
-                            <div class="col-md-6 text-center">
-                                <!--<img title="A Login Form" class="login-2 img-thumbnail" src="http://oi65.tinypic.com/2z566mg.jpg"/>-->
-                                <img class="login-1 img-thumbnail" src="C:\Users\user\Pictures\login-1.png"/>
-                            </div>
-                            <div class="col-xs-6 text-center">
-                                <!--<img class="ad img-thumbnai" src="http://oi65.tinypic.com/bip92h.jpg"> -->    
-                             <img class="login-2 img-thumbnail" src="C:\Users\user\Pictures\devmate.png"/>
-                            </div>
-						
-                        </div>	
-                    </article>
-                </div>
-            
-				<div id="contact" name="form-div">
-                    <h1 class="contact-me con"> CONTACT ME </h1>
-					<div class="flex-2">
-                        <div class='row'>
-                            <div class='col-sm-6 text-center'>
+	</nav>
+
+	<div class="container">
+		<div id="about" class="wrapper">
+
+
+			<div class='container'>
+				<div class='row'>
+					<div class='container'>
+						<div class='col-md-8'>
+							<!--                                <div class="flex">-->
+							<p class="my-text"> A Front-End Web Developer and a UI designer, with little <br> experience in UX design, got Team Work and a Relentless Spirit; <br> devoted to functional programming and a tech geek.
+							</p>
+
+
+							<hr class="hr-1" />
+							<h3 class="work"> Web Developer | UI Designer | Phone Engineer </h3>
+						</div>
+						<div class='container'>
+							<div class='col-md-4'>
+								<!--<img class="author" src="http://oi66.tinypic.com/6yfhjp.jpg"  alt="Author staring at the camera"/>-->
+								<img src="images/author.jpg" alt='author stairing at the camera' class='author img-responsive' />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="portfolio" class="portfolio-div">
+			<article class='logins'>
+				<h1 class="portfolio h1 text-center"> PORTFOLIO </h1>
+
+				<div class="logins row">
+					<div class="col-md-6 text-center">
+						<!--<img title="A Login Form" class="login-2 img-thumbnail" src="http://oi65.tinypic.com/2z566mg.jpg"/>-->
+						<img class="login-1 img-thumbnail" src="C:\Users\user\Pictures\login-1.png" />
+					</div>
+					<div class="col-xs-6 text-center">
+						<!--<img class="ad img-thumbnai" src="http://oi65.tinypic.com/bip92h.jpg"> -->
+						<img class="login-2 img-thumbnail" src="C:\Users\user\Pictures\devmate.png" />
+					</div>
+
+				</div>
+			</article>
+		</div>
+
+		<div id="contact" name="form-div">
+			<h1 class="contact-me con"> CONTACT ME </h1>
+			<div class="flex-2">
+				<div class='row'>
+					<div class='col-sm-6 text-center'>
 						<aside>
-						<p class="ct">Want to get in touch with me? Be it to request <br> more info about myself or my experience, to ask <br> for my resume, tips on how to solve your sudoku, <br> 
-						random questions from within the universe and <br> the meaning of life,
-						or even if only for some nice <br> Fika here in our stunning Nigeria,
-						just feel <br> free to drop me a line anytime.
-						<br> <br>
-						I promise to reply A.S.A.P
-						<!--Hello Wolrd. Lwkm -->
-						<br><br><br><br><br><br><br><br>
-						
-						 Note: No spam/soliciting or ADs... gracias ;)</p> 
+							<p class="ct">Want to get in touch with me? Be it to request <br> more info about myself or my experience, to ask <br> for my resume, tips on how to solve your sudoku, <br> random questions from within the universe and <br> the meaning of life, or even if only for some nice <br> Fika here in our stunning Nigeria, just feel <br> free to drop me a line anytime.
+								<br> <br> I promise to reply A.S.A.P
+								<!--Hello Wolrd. Lwkm -->
+								<br><br><br><br><br><br><br><br> Note: No spam/soliciting or ADs... gracias ;)</p>
 						</aside>
-                        </div>
-                            
-                            <div  class='col-sm-6 text-center'>
+					</div>
+
+					<div class='col-sm-6 text-center'>
 						<form id="form" name="form-val">
 							<div id="form-item">
 								<label for="name">
@@ -403,44 +431,49 @@
 							</div>
 							<button class="btn btn-lg"> Send </button><br/><br/>
 						</form>
-                        </div>
-                        
 					</div>
-				</div>	
-            </div>
-        </div>
-			<footer class="footer-1">
-            <div class='container'>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer-1">
+		<div class='container'>
 			<div class="row">
-			<div class="col-sm-4">
-			<h1 class="footer-h1"> About this page </h1> <br>
-			<p class="footer-p"> Made with <i class="fa fa-html5">  </i> and <i class="fa fa-css3"></i>
-			<br>
-			 By <strong> <a href="">Remi Jnr.</a> </strong> </p>
+				<div class="col-sm-4">
+					<h1 class="footer-h1"> About this page </h1> <br>
+					<p class="footer-p"> Made with <i class="fa fa-html5">  </i> and <i class="fa fa-css3"></i>
+						<br> By <strong> <a href="">Remi Jnr.</a> </strong> </p>
+				</div>
+				<div class="col-sm-8">
+					<h1 class="footer-h1"> Around the web </h1><br>
+					<ul class="social">
+						<li> <a href=""> <i class="fa fa-twitter fa-fw"></i></a></li>
+						<li> <a href=""> <i class="fa fa-facebook fa-fw"></i></a></li>
+						<li> <a href=""> <i class="fa fa-google-plus fa-fw"></i></a></li>
+						<li> <a href=""> <i class="fa fa-github fa-fw"></i></a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-sm-8">
-			<h1 class="footer-h1"> Around the web </h1><br>
-			<ul class="social">
-			<li> <a href=""> <i class="fa fa-twitter fa-fw"></i></a></li>
-			<li> <a href=""> <i class="fa fa-facebook fa-fw"></i></a></li>
-			<li> <a href=""> <i class="fa fa-google-plus fa-fw"></i></a></li>
-			<li> <a href=""> <i class="fa fa-github fa-fw"></i></a></li>
-			</ul>
-			</div>
-			</div>
-                </div>
-			</footer>    
-			<footer class="footer-2">
-                <div class='container'>
-			 <h4 style="text-align: center; font-weight: 700; font-size: 21px; color: white; padding-top: 1em;"> <span style="font-family: 'great vibes', cursive; padding-right: 6px; font-weight: normal;">Dev_GanG </span> &copy; <script>document.write(Date().getFullYear());</script>2018. All Rights Reserved </h4> 
-                </div>
-			</footer>
-         <script>
-    $(document).ready(function(){
-       $(window).on('scroll','nav', function(){
-           $('nav').hide();
-       }); 
-    });
-    </script>
-    </body>
-</html>	
+		</div>
+	</footer>
+	<footer class="footer-2">
+		<div class='container'>
+			<h4 style="text-align: center; font-weight: 700; font-size: 21px; color: white; padding-top: 1em;"> <span style="font-family: 'great vibes', cursive; padding-right: 6px; font-weight: normal;">Dev_GanG </span> &copy;
+				<script>
+					document.write(Date().getFullYear());
+
+				</script>2018. All Rights Reserved </h4>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function() {
+			$(window).on('scroll', 'nav', function() {
+				$('nav').hide();
+			});
+		});
+
+	</script>
+</body>
+
+</html>
