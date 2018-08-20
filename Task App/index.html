@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+</head>
+
+	<body>
+<button class="hide"> toggle</button>
+        <h1> Hide  </h1>
+        <script type="text/javascript">
+        var btn = document.querySelector("button");
+            console.log(btn);
+            
+            var toggle = function(){
+                if(btn.className == "hide"){
+                    btn.className = "";
+                    console.log(btn + " from if");
+                    document.querySelector("h1").style.display = "block";
+                }
+                else{
+                    btn.className = "hide";
+                    console.log(btn + " from else")
+                    
+                        document.querySelector("h1").style.display = "none";
+                    
+                    
+                }
+            }
+           btn.addEventListener("click", toggle);
+        </script>
+</body>
+</html>

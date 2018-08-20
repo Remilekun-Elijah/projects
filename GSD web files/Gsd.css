@@ -1,0 +1,211 @@
+ .list-item{
+     font-size: 1.4em;
+     margin-left: .4em;
+}
+nav {
+    padding: 1em;
+    border-radius: 0 !important;
+    background: linear-gradient(-30deg,#fccfcc,#ffccff) !important;
+    box-shadow: 0px .2em 8px 0px #aaa;
+    -webkit-box-shadow: 0px .2em 8px 0px #aaa;
+    -moz-box-shadow: 0px .2em 8px 0px #aaa;
+    -o-box-shadow: 0px .2em 8px 0px #aaa;
+    
+}
+
+ .list-item:hover, .list-item:focus{
+     font-size: 1.4em;
+     transform: scale(1);
+     box-shadow: 0px .2em 8px 0px #aaa;
+     -webkit-box-shadow: 0px .2em 8px 0px #aaa;
+     -moz-box-shadow: 0px .2em 8px 0px #aaa;
+     -o-box-shadow: 0px .2em 8px 0px #aaa;
+    background: #fccfcc;
+    transition: all 400ms;
+     overflow-x: hidden !important;
+   color: #fccfcc;
+
+}
+
+button:hover, button:focus{
+        background-color: #fcc !important;
+}
+
+.heading{
+    background: linear-gradient(180deg,#fccfcc,#bbb);
+    padding-bottom: 4em;
+}
+.go-up{
+    border: 1px solid  #fccfcc !important;
+    margin: 1.2em;
+    padding: 5em;
+    position: fixed;
+    font-size: 2em !important;
+    z-index: 1;
+    right: 2.5em;
+    transition: all .7s;
+    bottom: -0em;
+    opacity: 0;
+    color: #fccfcc;
+   background-color: purple !important;
+}
+.go-up:hover{
+    border: 1px solid purple !important;
+    color: purple !important;
+    background-color: #ffccff !important;
+/*    margin: -.3em;*/
+    transition: all .5s;
+    box-shadow: 0px .2em 8px 0px #aaa;
+    -webkit-box-shadow: 0px .2em 8px 0px #aaa;
+    -moz-box-shadow: 0px .2em 8px 0px #aaa;
+    -o-box-shadow: 0px .2em 8px 0px #aaa;    
+   
+}
+#banner{ transition: top 0.5s;
+}
+
+body {
+    overflow-x: hidden;
+	text-align: center !important;
+	background-color: #aaa !important;
+}
+.read-more{
+    border: 2px solid #ffccff !important;
+    padding: 1%;
+    color: #fff ;
+    background-color: #bbb ;
+    transition: .5s;
+    box-shadow: 0px .2em 8px 0px #aaa;
+    -webkit-box-shadow: 0px .2em 8px 0px #aaa;
+    -moz-box-shadow: 0px .2em 8px 0px #aaa;
+    -o-box-shadow: 0px .2em 8px 0px #aaa;   
+}
+.read-more:hover{
+    transform:scale(1.07);
+    background-color: #ffccff !important;
+    border-color: #aaa !important;
+    box-shadow: 0px .2em 8px 0px #aaa;
+    -webkit-box-shadow: 0px .2em 8px 0px #aaa;
+}
+
+/*
+ .fa-chevron-up { 
+     padding: .6em;
+     margin: .7em;
+     color: #fccfcc;
+     background: purple;
+     font-size: 1.5em !important; 
+}
+*/
+/*
+
+.fa-chevron-up:hover{
+    background: #fccfcc;
+    color: purple;
+}
+*/
+
+h1 {
+    margin-top: 5em !important;
+}
+
+.topic {
+	border-style: dotted solid double dashed;
+	background-color: white;
+	border-radius: 20px;
+	padding:15px;
+	box-shadow: 8px 8px 8px #aaa;
+	border-left-style: solid;
+	color: teal;
+	font-family: 'Tangerine', serif;
+	text-shadow: 8px 8px 8px #aaa;
+	margin-bottom: 1px;
+	text-transform: uppercase;
+
+}
+
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color:dimgray;
+/*	opacity: 0.90;*/
+}
+
+.h2 {
+	color: black!important;
+    font-weight: 600;
+    word-spacing: auto;
+    letter-spacing: .05em;
+    opacity: 0.7;
+	font-family: fantasy , sans-serif;
+}
+.padding{
+    margin: 2em 17em;
+/*    border: .2em solid #aaa !important;*/
+}
+.lead{
+    color: #000;
+    opacity: .6;
+}
+
+h3 {
+	color: #000 !important;
+    opacity: 0.7;
+    font-weight: 600;
+	
+}
+
+.unorder {
+    font-size: 3vh;
+	color: #000;
+    opacity: 0.6;
+    list-style-position: outside!important;
+
+}
+.unoder li{
+    text-align: left !important;
+}
+.my-4{
+    border-top: .1em solid #aaa !important;
+    margin: 1em 8em !important;
+    padding-bottom: 1em;
+}
+#Types_Of_GSD{
+    background: #ccc;
+    padding-top: -1em;
+}
+
+ul,ol {
+	list-style-position: inside;
+}
+.order {
+	font-style: italic;
+	color: white;
+	list-style: none;
+}
+
+img {
+	width: 550px;
+	height: 440px;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+}
+.fgsd {
+	position: relative;
+	right: 300px;
+	color: whitesmoke;
+}
+.jumbotron {
+	border-radius: 0 !important;}
+
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}

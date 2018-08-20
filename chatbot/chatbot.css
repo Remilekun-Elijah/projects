@@ -1,0 +1,70 @@
+body {
+	display: -webkit-box;
+	-webkit-box-pack: start;
+	text-align: center;
+	background-color: rgb(183, 183, 183);
+
+	/*background-color: rgb(159, 155,162);*/
+}
+
+.bot-name {
+	color: red;
+	font-family: cursive;
+}
+
+.msgArea{
+    overflow-x:;
+    overflow-y: scroll;
+}
+
+[type="radio"],
+[type="checkbox"] {
+	cursor: pointer;
+}
+
+.bot-pic {
+	border-bottom-style: ridge;
+	width: 250px;
+	height: 350px;
+	position: relative;
+	bottom: 10px;
+}
+
+#text,
+#myText {
+	box-shadow: 5px 5px 25px 5px;
+	border-radius: 10px;
+	resize: none;
+	text-align: center;
+	font-style: italic;
+    padding-bottom: .6em;
+}
+
+#send {
+	box-shadow: 5px 5px 25px 5px;
+	border-radius: 5px;
+	height: 30px;
+	width: 80px;
+}
+
+.spin {
+	animation-name: spin;
+	animation-duration: 1000ms;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+	100% {
+		background-color: coral;
+	}
+	40% {
+		background-color: red;
+		font-size: 1.1em;
+		padding-left: 1em;
+		padding-right: -1em;
+	}
+	70% {
+		background-color: cornflowerblue
+	}
+}

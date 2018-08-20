@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+  <title> Survey Project</title>
+    
+    <link rel="stylesheet" type="text/css" href="Survey.css">
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>-->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="wrapper">
+   
+    <header>
+        <h1 id='title' > <span class="bord">Survey Form</span> </h1>
+    </header>
+   <div id="container">
+       <main id="main-wrapper">
+        <session>
+            <p id="description"> Let Us know how we can improve Pets Hub</p>
+        </session>  
+        <article>
+            <form action="" method="post" id="survey-form">
+                <section id="section">
+                  <div id="input-group">
+                <label id="name-label" for="name">Name: 
+                <input type="text" name="name" placeholder="Enter your Name" class="input" id="name" required>
+                </label>
+                <br>
+                 <label id="email-label" for="email">Email:
+                <input type="email" name="email" placeholder="Enter your Email" class="input" id="email" required>
+                </label>
+                <br>
+                 <label id="number-label" for="number">Age:
+                <input type="number" min="0" max="150" name="age" placeholder="Age" class="input" id="number" required>
+                </label>
+                    </div>
+                </section>
+                <div class="div">
+                  <div class="div1">
+                    <label class="p1">Which option best describe your role?
+                    </label>
+                    <select id="dropdown">
+                        <option disabled>Select an option</option>
+                        <option>Student</option> 
+                <option>Full Time Job</option>
+                <option>Entrepreneur</option>
+                <option>Other</option>
+                </select>  
+                </div>
+            </div>
+<!--                radio -->
+            <div class="radio">
+                <label class="radio-caption">How likely will you recommend Pet Hub <br> to your friend ?</label>
+                <label id="radio-group" for="check">
+                <label id="check">
+                <input type="radio" name="check" value="1">Definitely
+                </label>
+                <label id="check">
+                <input type="radio"  name="check" value="2">
+                Maybe
+                </label>
+                <label id="check">
+                <input type="radio" name="check" value="3">
+                    Not Sure
+                </label>
+                </label>
+            </div>
+                
+                <div class="div">
+                  <div class="div1">
+                    <label class="p1">What do you like most in Pets Hub:
+                    </label>
+                    <select id="dropdown">
+                        <option disabled>Select an option</option>
+                        <option>Dogs</option> 
+                <option>Cats</option>
+                <option>Prices</option>
+                <option>Other</option>
+                </select>  
+                </div>
+            </div>
+                
+            <div class="radio">
+                <label class="radio-caption">Things that should be improved/included in the future <br> (Check all that apply):</label>
+                <div id="radio-group">
+                <label id="check">
+                <input type="checkbox" name="check" value="1"> More Contents
+                </label>
+                <label id="check">
+                <input type="checkbox"  name="check" value="2">
+                Our Dogs prices
+                </label>
+                <label id="check">
+                <input type="checkbox" name="check" value="3">
+                    Our Cats prices
+                </label>
+                <label id="check">
+                <input type="checkbox" name="check" value="4">
+                     Customer Service
+                </label>
+                <label id="check">
+                <input type="checkbox" name="check" value="5">
+                    Wiki
+                </label>
+                <label id="check">
+                <input type="checkbox" name="check" value="6">
+                    Forum
+                </label>
+                </div>
+            </div>
+            <div id="text">
+                <label id="text-header">Any message or suggestion ? </label>
+            <textarea placeholder="your mssage here" rows="5" cols="40" id="text-area" >
+                
+            </textarea>    
+            </div>
+                <div class="btn">
+                <input id="submit" type="submit" class="fa fa-paper-plane" value="Submit">
+                </div>
+    </form>
+        
+        
+        </article>
+    </main>
+  
+    
+    </div> 
+    <footer id="footer1">
+        <div class="center">
+           <b><i class="fa fa-comment"></i> Our Dogs</b>
+            <hr class="hr">
+        <ul>
+             
+            <li> German Sherphard</li>
+            <li> Rotweiler</li>
+            <li> Bull Dog</li>
+            <li>Police Dog</li>
+        </ul>
+        </div>
+        <div class="center">
+            <b><i class="fa fa-mail-forward"> Follow Us</i></b>
+            <hr class="hr">
+        <ul class="F">
+            
+            <a href="twitter.com/RemilekunElijah"><li><i class="fa fa-twitter"></i> Twitter</li></a>
+            <a href="facebook.com/remilekun.elijah.97"><li><i class="fa fa-facebook"></i> Facebook</li></a>
+            <li><i class="fa fa-instagram"></i> Instagram</li>
+            <li><i class="fa fa-snapchat"></i> SnapChat</li>
+        </ul>
+        </div>
+        
+        <div class="center">
+            <b><i class="fa fa-phone"></i> Contact Us</b>
+            <hr class="hr">
+        <ul class="C">
+            
+            <li>
+                <i class="fa fa-home"></i> <span class="home">No 106 Ajose Adeogun <br> VI, Lagos Nig.</span>
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i> devgang@info.com
+            </li>
+            <li>
+                <i class="fa fa-phone"></i> +234-9023-521-166
+            </li>
+            <li class="li">
+                <i class="fa fa-briefcase"></i> +234-815-251-4791
+            </li>
+        </ul>
+        </div>
+    </footer>
+    
+    <footer id="footer2" style="color: black">
+    <marquee style="font-family: 'Great Vibes', 'sacramento', 'philosopher', cursive, sans-serif; font-size: 20px; font-weight: 600;"> &copy; 2018 - <script> var date = new Date();  document.write(date.getFullYear())</script><b style="font-weight: bold;"> Dev_GanG </b> Inc. </marquee>
+    </footer>
+    <script rel="stylesheet" type="text/javascript" src="Survey.js"></script>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

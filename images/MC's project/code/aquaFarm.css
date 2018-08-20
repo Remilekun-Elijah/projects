@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800|Dancing+Script|Fjalla+One|Merienda');
+.imported{
+    font-family: "Dancing Script", sans-serif;
+}
+body{
+    background-image: url(../img/aq.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+}
+nav{
+    margin: 0 auto;
+    border-radius: 0 !important;
+}
+
+
+.wel{
+    box-shadow: 0px 3px 1px #aaa;
+    border-radius: 0;
+    background: #fff;
+    margin-bottom: 0;
+}
+*/
+
+
+main #main{
+    position: relative;
+    margin-bottom: 30em !important;
+    
+}
+#slides{
+    background: #eee;
+}
+.black{
+    background: #000;
+    
+}
+
+.heade{
+    color: #aaa;
+    padding: 5vh 5vh;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 1em;
+    
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+blockquote{
+    background-color: #eee;
+    border-left-color:  #aaa !important;
+    font-weight: bolder;
+    font-size: 30px;
+    box-shadow: 2px 2px 1px #aaa;
+}
+.co1{
+     border: 1px solid #aaa;
+   padding:  0 0 ;
+    margin-left: 6em; 
+    box-shadow: 2px 2px 1px #aaa;
+    opaity:.9;
+}
+.co1:hover{
+   
+    box-shadow: 5px 5px 1px #aaa;
+    box-shadow: -2px -2px 2px #000;
+    
+}
+.bg-landscape{
+    background-image: url(../img/bg.jpg);
+    padding: 2em;
+/*    background-attachment: fixed;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img{
+   margin: 0 0;
+    background: #fff;
+/*     padding: 2% 6%;*/
+}
+
+.img:hover{
+     opacity: .5;
+}
+.hr{
+    border-bottom: 1px solid #aaa;
+    margin: 1px -15px;
+/*    padding: 1px 5px 1px 5px;*/
+}
+.body{
+    
+    padding:10px;
+    margin: 0 -15px;
+    text-align: center;
+    background-color: #bbb;
+    color: white;
+}
+.body:hover{
+    padding:10px;
+    margin: 0 -15px;
+    text-align: center;
+    background-color: #fff;
+    color: #aaa;
+}
+
+/*.co2{
+    border: 1px solid #aaa;
+    padding: 0 0;
+    margin: 0 8em;
+} */
+.co3{
+ padding: 1em;   
+}
+.h2-underline{
+    margin: .5em 38em;
+    border-top: 2px solid #aaa;
+    padding-bottom: 1em;
+}
+
+
+
+.box{
+     
+}
